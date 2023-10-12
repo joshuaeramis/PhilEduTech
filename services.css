@@ -1,0 +1,231 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+a{
+  padding: 8px;
+  border-radius: 3px;
+  color: red;
+  font-weight: 700;
+}
+
+a:hover{
+  color: white;
+  transition: .5 ease-in;
+}
+
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo a{
+  color: white;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+  background-color: transparent;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+  position: relative;
+}
+
+
+  /* school list */
+  #services{
+    margin-top: 100px;
+    text-align: center;
+  }
+  #services h1{
+    color: black;
+    font-size: 50px;
+    padding: 12px;
+  }
+    #school{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .school-list{
+      display: flex;
+      /* background-image:linear-gradient(120deg,#908cad,#ffffff); */
+      align-self: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px;
+      border: solid black;
+      padding: 50px 15px;
+      border-radius: 15px;
+      flex-basis: 20%;
+    }
+
+    .school-list p{
+      margin-bottom: 12px;
+    }
+ 
+    #services .school-list li a{
+      color: rgb(255, 0, 0);
+      font-size: 17px;
+      padding: 3px 7px;
+      margin: 12px;
+      font-weight: 800;
+      border-radius: 3px;
+    }
+
+
+
+/* media query----------------------------------------------------------------------------------- */
+@media (max-width: 1000px){
+    label.logo{
+      font-size: 20px;
+      padding-left: 15px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    #services .services{
+      text-align: center;
+      margin: 0 auto;
+      padding: 200px 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    #services h1{
+      font-size: 40px;
+      margin-top: 30px;
+    }
+    #services p{
+      font-size: 12px;
+    }
+    #services .cta{
+      display: inline-block;
+      padding: 10px 30px;
+      background-color: transparent;
+      border: 2px solid blue;
+      letter-spacing: 0.1rem;
+      font-size: 20px;
+      margin-top: 30px;
+      transition: 0.3 ease;
+      transition-property: background-color, color;
+    }
+    #services .cta:hover{
+      color: white;
+      background-color: blue;
+    }
+    #grade .grade-list{
+      margin: 20px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .card{
+        max-width: 300px;
+        width: 200px;
+        height: auto;
+    }
+    .card-info h3{
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+    
+    .card-info p{
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    #activity .activity-item{
+      flex-basis: 60%;
+      display: flex;
+    }
+    
+  }
+  @media (max-width: 858px){
+    
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+      transition: .5s;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    
+  }
+/* end of media query ------------------------------------------------------------------------------------- */
