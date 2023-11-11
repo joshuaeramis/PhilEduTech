@@ -18,11 +18,11 @@ header{
 .container {
   min-height: 100vh;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 a{
-  padding: 8px;
+  padding: 5px;
   border-radius: 3px;
   color: red;
   font-weight: 700;
@@ -91,9 +91,21 @@ a.active,a:hover{
   }
   #services h1{
     color: black;
-    font-size: 50px;
+    font-size: 70px;
     padding: 12px;
   }
+
+  #services p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  #school-head .card img{
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
     #school{
       display: flex;
       align-items: center;
@@ -102,24 +114,36 @@ a.active,a:hover{
       margin-top: 20px;
     }
 
-    .school-list{
+
+    #school .school-list img{
+      width: 200px;
+      border-radius: 5px;
+    }
+    #image .card-image img{
+      margin-bottom: 20px;
+      width: 100%;
+    }
+   
+    #school .school-list{
       display: flex;
-      /* background-image:linear-gradient(120deg,#908cad,#ffffff); */
       align-self: flex-start;
       justify-content: center;
       flex-direction: column;
       margin: 20px;
-      border: solid black;
-      padding: 50px 15px;
+      padding: 10px 5px;
       border-radius: 15px;
-      flex-basis: 20%;
+      flex-basis: 10%;
+    }
+    #school .school-list h2{
+      font-size: 12px;
     }
 
-    .school-list p{
+    #school .school-list p{
+      font-size: 12px;
       margin-bottom: 12px;
     }
- 
-    #services .school-list li a{
+
+    #school .school-list li a{
       color: rgb(255, 0, 0);
       font-size: 17px;
       padding: 3px 7px;
@@ -128,15 +152,15 @@ a.active,a:hover{
       border-radius: 3px;
     }
 
-
+    /* Card section */
 
 
 
 /* media query----------------------------------------------------------------------------------- */
-@media (max-width: 1000px){
+@media (max-width: 1500px){
     label.logo{
       font-size: 20px;
-      padding-left: 15px;
+      padding-left: 50px;
     }
     nav ul li a{
       font-size: 16px;
@@ -175,11 +199,6 @@ a.active,a:hover{
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-    }
-    .card{
-        max-width: 300px;
-        width: 200px;
-        height: auto;
     }
     .card-info h3{
       font-size: 20px;
@@ -228,6 +247,5 @@ a.active,a:hover{
     #check:checked ~ ul{
       left: 0;
     }
-    
   }
 /* end of media query ------------------------------------------------------------------------------------- */
