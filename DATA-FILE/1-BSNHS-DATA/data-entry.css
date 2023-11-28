@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(113,183,230);
+  background: linear-gradient(90deg, rgba(113,183,230,1) 0%, rgba(182,89,182,1) 42%, rgba(209,0,255,1) 100%);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+.container{
+  margin-top: 30%;
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin-bottom: 50px;
+ 
+}
+
+a{
+  padding: 12px;
+  border-radius: 3px;
+  color: red;
+  font-weight: 700;
+  
+}
+
+a:hover{
+  color: white;
+  transition: .5 ease-in;
+}
+
+nav{
+  background: linear-gradient(90deg, rgba(113,183,230,1) 0%, rgba(182,89,182,1) 42%, rgba(209,0,255,1) 100%);
+  height: 80px;
+  width: 100%;
+}
+
+
+label.logo a{
+  color: white;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li a:hover{
+  color: white;
+}
+
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+  
+
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+  position: relative;
+}
+
+
+.container .title{
+  margin: 12px;
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(113,183,230);
+  background: linear-gradient(90deg, rgba(113,183,230,1) 0%, rgba(182,89,182,1) 42%, rgba(209,0,255,1) 100%);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0;
+ }
+
+
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: rgb(113,183,230);
+   background: linear-gradient(90deg, rgba(113,183,230,1) 0%, rgba(182,89,182,1) 42%, rgba(209,0,255,1) 100%);
+ }
+ form .button input:hover{
+  transform: scale(0.99);
+  background: rgb(113,183,230);
+  background: linear-gradient(90deg, rgba(113,183,230,1) 0%, rgba(182,89,182,1) 42%, rgba(209,0,255,1) 100%);
+  }
+
+
+
+
+/* media query section ------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1000px){
+
+  .container .title{
+    font-size: 2rem;
+  }
+  label.logo{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  #services .services{
+    text-align: center;
+    margin: 0 auto;
+    padding: 200px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #services h1{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  #services p{
+    font-size: 12px;
+  }
+  #services .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid blue;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: 0.3 ease;
+    transition-property: background-color, color;
+  }
+  #school .school-list ul li a{
+    color: black;
+  }
+  
+}
+
+@media (max-width: 858px){
+
+  .container{
+    margin-top: 150%;
+  }
+  .container .title{
+    font-size: 1rem;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+    transition: .5s;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #school .school-list h2{
+    font-size: 12px;
+  }
+
+  #school .school-list ul li a{
+    color: black;
+  }
+  
+}
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PhilEduTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DATA-FILE/1-BSNHS-DATA/data-entry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font style -->
+    <href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><a href="/index.html">PhilEduTech</a></label>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/services.html">services</a></li>
+        <li><a href="/files.html">files</a></li>
+        <li><a class="active" href="/Butuan City.html">Butuan city</a></li>
+        <li><a href="/queries.html">queries</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+      <div class="title"style="text-align: center;">DATA ENTRY OF SOUTH DISTRICT II <br>
+      OF SAN JUAN ELEMENTARY SCHOOL</div>
+      <div class="content">
+      <div class="user-details">
+          <div class="input-box">
+            <form id="uploadForm" action="https://script.google.com/a/macros/deped.gov.ph/s/AKfycbwocfN7tgGyB7EonwsYcKpOBQeqZx5_Qxj-IqWCqornXmgmmcyF2TM2J7YEojRpBXaSyA/exec" method="POST">
+            <input type="hidden" value="" name="fileContent" id="fileContent">
+            <input type="hidden" value="" name="filename" id="filename">
+            <div class="user-details">
+  
+  
+            <div class="input-box">
+               <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Family Name, First Name, Surname" required>
+            </div>
+  
+  
+           <div class="input-box">
+            <label for="Birthdate" class="form-label">Birthdate</label>
+              <input type="date" id="Birthdate" name="Birthdate" class="form-control" placeholder="Enter your Date of Birth" required>
+            </div>
+            
+  
+              <div class="input-box">
+                <label for="status" class="form-label">Status</label>
+                <select type="status" id="status" name="status" class="form-control" placeholder="Status " required>
+                    <option>Single</option>
+                    <option>Married</option>
+                </select>
+                </div>
+  
+                <div class="input-box">
+                  <label for="gender" class="form-label">Gender</label>
+                  <select type="gender" id="gender" name="gender" class="form-control" placeholder="Gender" required>
+                      <option>Male</option>
+                      <option>Female</option>
+                  </select>
+                  </div>
+  
+           <div class="input-box">
+              <label for="address" class="form-label">Address</label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Address" required>
+              </div>
+  
+  
+              <div class="input-box">
+                <label for="email" class="form-label">DepEd Email</label>
+                  <input type="text" id="email" name="email" class="form-control" placeholder="DepEd Email" required>
+                </div>
+  
+  
+          <div class="input-box">
+                <label for="position" class="form-label">DepEd Position</label>
+                  <input type="text" id="position" name="position" class="form-control" placeholder="Deped Position" required>
+           </div>
+  
+  
+          <div class="input-box">
+              <label for="employment" class="form-label">Date of Employment</label>
+                <input type="text" id="employment" name="employment" class="form-control" placeholder="Month-Day-Year " required>
+              </div>
+              </form>
+  
+              <div class="input-box">
+                <label for="service" class="form-label">Lenght of Service</label>
+                  <input type="text" id="service" name="service" class="form-control" placeholder="Lenght of Service" required>
+                </div>
+                </form>
+  
+                <div class="input-box">
+                  <label for="plantilla_no" class="form-label">Plantilla No.</label>
+                    <input type="text" id="plantilla_no" name="plantilla_no" class="form-control" placeholder="Plantilla No." required>
+                  </div>
+                  </form>
+  
+                  <div class="input-box">
+                    <label for="prc" class="form-label">PRC No.</label>
+                      <input type="text" id="prc" name="prc" class="form-control" placeholder="PRC No." required>
+                    </div>
+                    </form> 
+  
+                    <div class="input-box">
+                      <label for="philhealth" class="form-label">PhilHealth No.</label>
+                        <input type="text" id="philhealth" name="philhealth" class="form-control" placeholder="PhilHealth No." required>
+                      </div>
+                      </form> 
+                      
+                      
+          <div class="input-box">
+              <label for="file" class="form-label"> TOR, PRC and IPCRF PDF File</label>
+              <input required id="attach" name="attach" type="file"/>
+              </div>
+  
+              
+          <div class="button"style="width: 100%;">
+              <input type="button" value="SAVE DATA" onclick="UploadFile();" />
+              </div>
+              <div>
+          <a href="https://docs.google.com/spreadsheets/d/1b4Lfw8ulh3DNPUUyOaHk7HueNVPB1ZAeoobo7rfJgbo/edit#gid=1199297152">VIEW DATA</a>
+         <button class="btn btn-danger" type="reset">RESET FORM</button>
+             </div>
+  
+      <script>
+      function UploadFile() {
+      var reader = new FileReader();
+      var file = document.getElementById('attach').files[0];
+      reader.onload = function(){
+      document.getElementById('fileContent').value=reader.result;
+      document.getElementById('filename').value=file.name;
+      document.getElementById('uploadForm').submit();
+      }
+      reader.readAsDataURL(file);
+      }
+      </script>
+
+  </html>
+  </body>

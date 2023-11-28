@@ -106,6 +106,18 @@ a.active,a:hover{
     margin-top: 20px;
   }
 
+  #school-data{
+    margin-bottom: 50px;
+  }
+
+
+  #school-data .card img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+
+
     #school{
       display: flex;
       align-items: center;
@@ -157,7 +169,7 @@ a.active,a:hover{
 
 
 /* media query----------------------------------------------------------------------------------- */
-@media (max-width: 1500px){
+@media (max-width: 1000px){
     label.logo{
       font-size: 20px;
       padding-left: 50px;
